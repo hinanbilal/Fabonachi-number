@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int fabonachi(int first_integer,int second_integer)
+{
+
+cout<<first_integer+second_integer;
+
+for (int for_counting_numberofdisplay=0 ; for_counting_numberofdisplay<4 ; for_counting_numberofdisplay++ )
+ {
+
+     fabonachi(first_integer+second_integer,first_integer);
+
+if(for_counting_numberofdisplay==3)
+return 0;
+}
+
+}
+
+
+
+int main()
+{
+int first_int=0,second_int=1;
+
+fabonachi(first_int,second_int);
+
+
+}
